@@ -27,4 +27,4 @@ jobs:
           tags: test
       - name: Test
         run: |
-          docker run --rm test
+          docker run --rm docker.io/library/test:latest
