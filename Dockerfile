@@ -8,8 +8,6 @@ RUN apt-get update && apt-get dist-upgrade -qy && apt-get install -qy \
 
 RUN rm -rf /var/lib/apt/lists/* /var/log/alternatives.log /var/log/apt/history.log /var/log/apt/term.log /var/log/dpkg.log
 
-RUN --mount=type=secret,id=root-password echo "root:$(cat /run/secrets/root-password)" | chpasswd
-
 RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 
 RUN chown -R coroqnetd:coroqnetd /etc/corosync/
