@@ -5,8 +5,8 @@ on:
     types: [opened, synchronize, reopened]
 
 env:
-      IMAGE_NAME: artkrz/qdevice
-      TAG: $GITHUB_SHA
+  IMAGE_NAME: artkrz/qdevice
+  TAG: $GITHUB_SHA
 
 jobs:
   docker:
