@@ -3,7 +3,7 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 env:
-  IMAGE_NAME: artkrz/qdevice
+  IMAGE_NAME: qdevice
   TAG: $GITHUB_SHA
 jobs:
   docker:
