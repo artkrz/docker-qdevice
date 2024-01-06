@@ -28,4 +28,4 @@ jobs:
           tags: ${{ env.IMAGE_NAME}}:${{ env.TAG }}
       - name: Test
         run: |
-          docker run --rm ${{ env.IMAGE_NAME}}:${{ env.TAG }}
+          docker run -t -i --rm ${{ env.IMAGE_NAME}}:${{ env.TAG }} /bin/false
