@@ -4,7 +4,7 @@ on:
     types: [opened, synchronize, reopened]
 env:
   IMAGE_NAME: qdevice
-  TAG: ${{ env.GITHUB_SHA }}
+  TAG: test
 jobs:
   docker:
     runs-on: ubuntu-latest
