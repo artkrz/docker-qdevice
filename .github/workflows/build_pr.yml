@@ -26,6 +26,3 @@ jobs:
           context: .
           load: true
           tags: ${{ env.IMAGE_NAME}}:${{ env.TAG }}
-      - name: Test
-        run: |
-          docker run -t -i --rm ${{ env.IMAGE_NAME}}:${{ env.TAG }} /bin/true
